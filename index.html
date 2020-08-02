@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type="text/css">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/butler-stencil" type="text/css"/>
         <title>Arknights</title>
-        <link rel="shorcut icon" type="image/png" href="resources/img/RHODE.png">
+        <link rel="shorcut icon" type="image/png" href="resources/img/favicon.png">
 
 
     </head> 
@@ -17,24 +22,38 @@
             <nav>
                 <div class="row">
                     <img  src="resources/img/logo-white.png" alt="Arknights logo" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="#">CHARACTER</a></li>
-                        <li><a href="#">SYSTEM</a></li>
-                        <li><a href="#">GALLERY</a></li>
-                        <li><a href="#">EVENT</a></li>
+                    <img  src="resources/img/RHODE.png" alt="Arknights logo" class="logo-black">
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                    
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#operators">OPERATORS</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                        <li><a href="#trailer">Trailers</a></li>
+                        <li><a href="#review">Review</a></li>
+                        <li><a href="#pack">PAcks</a></li>
+
                     </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
-                <h1>Arknights<br>Fight for the dawn</h1>
-                <a class="btn btn-full" href="#">Join us</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <img src="resources/img/arknights.png" alt="name" class="arknights">
+                <a class="btn btn-full js--scroll-to-plan" href="#">Join us</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
 
+            </div>
+            <div class="moving">
+                <div class="moving stay">
+                </div>
+                <div class="moving mouse">
+                    <marquee scrollamount="7" direction="up" behavior="alternate" class="mouse"><img src="resources/img/mouse.png" /></marquee>
+                </div>
+                
+	
             </div>
 
         </header>
 
-        <section class="section-features">
+        <section class="section-features js--section-features" id="operators">
             <div class="row">
 
                 <h2>Operators &mdash; Choose your assistant</h2>
@@ -46,8 +65,8 @@
                 </p>
             </div>
 
-            <div class="row">
-                <div class="col span-1-of-4 box feature-text">
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box feature-text-first">
                     <a style="text-decoration:none" href="https://www.youtube.com/watch?v=ZSgi1-QFETw" target="_blank"><img src="resources/img/RHODE.png" alt="RHODE logo" class="icon-big">
                     <h3>Rhodes Island</h3> 
                     <p>Rhodes Island is a company situated near the city of Chernobog. Their goal is to find a cure for infected individuals with the plague virus. 
@@ -57,7 +76,7 @@
                 <div class="col span-1-of-4 box feature-text">
                     <a style="text-decoration:none" href="https://www.youtube.com/watch?v=5amkbsiqbSw" target="_blank"><img src="resources/img/Rhine.png" alt="RHINE LAB logo" class="icon-big">
                     <h3>Rhine lab</h3>
-                    <p>The Rhine Lab, or R.L. for short, is an organization in the world of Arknights.they are the strongest and also the protectors of the world but tend to be more violent</p>                
+                    <p>The Rhine Lab, or R.L. for short, is an organization in the world of Arknights. They are the strongest and also the protectors of the world but tend to be more violent</p>                
                     </a> 
                 </div>
                 <div class="col span-1-of-4 box feature-text">
@@ -65,78 +84,169 @@
                     <h3>Penguin Logistics</h3>
                     <p>Penguin Logistics is a logistics company that works in close liaison with Rhodes Island. As the essential supply line for a variety of necessities, Penguin 
                         Logistics selects only the most capable operators and has an almost endless amount of supplies that it offers to alliances as well as maintaining itself. 
-                        As for protection, Penguin Logistics doesn't seem to lack any. </p>  
+                         </p>  
                     </a>              
                 </div>
                 <div class="col span-1-of-4 box feature-text">
                     <a style="text-decoration:none" href="https://www.youtube.com/watch?v=Zj9SD4eN-ug" target="_blank"><img src="resources/img/LUNGMEN.png" alt="GREAT LUNGMEN logo" class="icon-big">
                     <h3>Great Lungmen</h3>
                     <p>The Great Lungmen, often simply referred to as Lungmen, is a country in the world of Arknights.Great Lungmen is a parallel to Hong Kong, which can be seen from 
-                        it being technically part of Yen but maintains a greater autonomy and having greater foreign influences. Furthermore, all Lungmenites' names are in Cantonese 
-                        and they also sometimes speak certain Cantonese words.</p>   
+                        it being technically part of Yen but maintains a greater autonomy and having greater foreign influences. </p>   
                     </a>             
                 </div>
             </div>
         </section>
 
-        <section class="section-meals">
-            <ul class="meals-showcase clearfix">
-                <li>
+        <section class="section-meals" id="gallery">
+            
+            <div class="meals-showcase clearfix">                
                     <figure class="meal-photo">
-                        <img src="resources/img/1.jpg" alt="Office">
-                    </figure>
-                </li>
-                <li>
+                        <img src="resources/img/1.png" alt="Office">
+                    </figure>               
+                
                     <figure class="meal-photo">
-                        <img src="resources/img/2.jpg" alt="Texas">
+                        <img src="resources/img/2.png" alt="Texas">
                     </figure>
-                </li>
-                <li>
+
+             </div>
+                <div class="meals-showcase clearfix">                
+                
                     <figure class="meal-photo">
                         <img src="resources/img/3.png" alt="Exusiai">
                     </figure>
-                </li>
-                <li>
+                
+                
                     <figure class="meal-photo">
                         <img src="resources/img/4.png" alt="Lapland">
                     </figure>
-                </li>
-            </ul>
-            <ul class="meals-showcase clearfix">
-                <li>
+                
                     <figure class="meal-photo">
-                        <img src="resources/img/5.jpg" alt="Spectre">
+                        <img src="resources/img/5.png" alt="Spectre">
                     </figure>
-                </li>
-                <li>
+               
                     <figure class="meal-photo">
-                        <img src="resources/img/6.jpg" alt="Texas&Lapland">
+                        <img src="resources/img/6.png" alt="Texas&Lapland">
                     </figure>
-                </li>
-                <li>
+                </div>
+                <div class="meals-showcase clearfix">                
                     <figure class="meal-photo">
-                        <img src="resources/img/7.jpg" alt="Emiya">
+                        <img src="resources/img/7.png" alt="Emiya">
                     </figure>
-                </li>
-                <li>
+              
                     <figure class="meal-photo">
                         <img src="resources/img/8.png" alt="Girl band">
                     </figure>
-                </li>
-            </ul>
+                </div>
+                <div class="meals-showcase clearfix">                
+                    <figure class="meal-photo">
+                        <img src="resources/img/9.png" alt="Girl band">
+                    </figure>
+               
+                    <figure class="meal-photo">
+                        <img src="resources/img/10.png" alt="Girl band">
+                    </figure>
+                
+                    <figure class="meal-photo">
+                        <img src="resources/img/11.png" alt="Girl band">
+                    </figure>
+                
+                    <figure class="meal-photo">
+                        <img src="resources/img/12.jpg" alt="Girl band">
+                    </figure>
+                </div>
+                <div class="meals-showcase clearfix">                
+                    <figure class="meal-photo">
+                        <img src="resources/img/13.png" alt="Girl band">
+                    </figure>
+                
+                    <figure class="meal-photo">
+                        <img src="resources/img/14.png" alt="Girl band">
+                    </figure>
+               
+                    <figure class="meal-photo">
+                        <img src="resources/img/15.png" alt="Girl band">
+                    </figure>
+                
+                    <figure class="meal-photo">
+                        <img src="resources/img/16.png" alt="Girl band">
+                    </figure>
+                </div>
+           
+          
+<!--
+            <div class="trieu-row">
+                <div class="trieu-column">
+                    <figure class="trieu-photo">
+                        <img src="resources/img/1.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/2.png" alt="Girl band">
+                </div>
+                <div class="trieu-column">
+                    <figure class="trieu-photo">
+                        <img src="resources/img/3.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/4.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/5.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/6.png" alt="Girl band">
+                    </figure>
+                </div>
+                <div class="trieu-column">
+                    <figure class="trieu-photo">
+                        <img src="resources/img/7.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/8.png" alt="Girl band">
+                    </figure>
+                </div>
+                <div class="trieu-column">
+                    <figure class="trieu-photo">
+                        <img src="resources/img/9.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/10.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/11.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/12.png" alt="Girl band">
+                    </figure>
+                </div>
+                <div class="trieu-column">
+                    <figure class="trieu-photo">
+                        <img src="resources/img/13.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/14.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/15.png" alt="Girl band">
+                    </figure>
+                    <figure class="trieu-photo">
+                        <img src="resources/img/16.png" alt="Girl band">
+                    </figure>
+                </div>
+            </div>
+            -->
         </section>
-        <section class="section-step">
+        <section class="section-step js--section-plan">
             <div class="row">
                 <h2>Download for free</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2">
-                    <img src="https://res09.bignox.com/appcenter/en/2019/11/2ea1a63c45fe294d36e29e348d441ea3_360-dry.png" alt="app" class="app-screen">
+                    <img src="https://res09.bignox.com/appcenter/en/2019/11/2ea1a63c45fe294d36e29e348d441ea3_360-dry.png" alt="app" class="app-screen js--wp-2">
                 </div>
-                <div class="col span-1-of-2">
+                <div class="col span-1-of-2 js--wp-5">
                     <div class="works-step">
                         <div>1</div>
-                        <p>Log in to your existing Facebook Twitter or Yostar</p>
+                        <p>Log in to your Facebook Twitter or Yostar</p>
                     </div>
                     <div class="works-step">
                         <div>2</div>
@@ -155,7 +265,215 @@
             </div>
         </section>
         
+
+        <section class="section-cities" id="trailer">
+            <div class="row">
+                <h2> Official Trailer</h2>
+            </div>
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box-1">
+                    <a style="text-decoration:none" href="https://www.youtube.com/watch?v=uySJpmfM7q4" target="_blank" ><img src="resources/img/trailer1.jpg" alt="trailer1"></a>
+                    <h3>PV 001</h3>
+                    <div class="city-feature">
+                        <i  class="ion-ios-musical-notes icon-small"></i><a style="text-decoration:none;color:#d1d1d1" href="https://www.youtube.com/watch?v=Bq6IuZIJhuI" target="_blank" >&nbsp;&nbsp;Moonster</a>
+                    </div>
+                    <div class="city-feature">
+                        <i  class="ion-ios-person icon-small"></i><a style="text-decoration:none;color:#d1d1d1" href="https://www.youtube.com/channel/UCk20cSRhH_ms_Yk1AZItFqA" target="_blank" >&nbsp;&nbsp;STARSET</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box-1">
+                    <a style="text-decoration:none" href="https://www.youtube.com/watch?v=uySJpmfM7q4" target="_blank" ><img src="resources/img/trailer2.jpg" alt="trailer2"></a>
+                    <h3>PV 002</h3>
+                    <div class="city-feature">
+                        <i  class="ion-ios-musical-notes icon-small"></i><a style="text-decoration:none;color:#d1d1d1" href="https://www.youtube.com/watch?v=H23tJk5zGG0" target="_blank" >&nbsp;&nbsp;Unbecoming</a>
+                    </div>
+                    <div class="city-feature">
+                        <i  class="ion-ios-person icon-small"></i><a style="text-decoration:none;color:#d1d1d1" href="https://www.youtube.com/channel/UCk20cSRhH_ms_Yk1AZItFqA" target="_blank" >&nbsp;&nbsp;STARSET</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box-1">
+                    <a style="text-decoration:none" href="https://www.youtube.com/watch?v=Hfu_I0V3VrM&t=5" target="_blank" ><img src="resources/img/trailer3.jpg" alt="trailer3"></a>
+                    <h3>PV 003</h3>
+                    <div class="city-feature">
+                        <i  class="ion-ios-musical-notes icon-small"></i><a style="text-decoration:none;color:#d1d1d1" href="https://www.youtube.com/watch?v=Bq6IuZIJhuI" target="_blank" >&nbsp;&nbsp;Monster</a>
+                    </div>
+                    <div class="city-feature">
+                        <i  class="ion-ios-person icon-small"></i><a style="text-decoration:none;color:#d1d1d1" href="https://www.youtube.com/channel/UCk20cSRhH_ms_Yk1AZItFqA" target="_blank" >&nbsp;&nbsp;STARSET</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box-1">
+                    <a style="text-decoration:none" href="https://www.youtube.com/watch?v=zclYeBTcN7c"  target="_blank" ><img src="resources/img/trailer4.jpg" alt="trailer4"></a>
+                    <h3>PV 004</h3>
+                    <div class="city-feature">
+                        <i  class="ion-ios-musical-notes icon-small"></i><a style="text-decoration:none;color:#d1d1d1" href="https://www.youtube.com/watch?v=H23tJk5zGG0"  target="_blank" >&nbsp;&nbsp;Unbecoming</a>
+                    </div>
+                    <div class="city-feature">
+                        <i  class="ion-ios-person icon-small"></i><a style="text-decoration:none;color:#d1d1d1" href="https://www.youtube.com/channel/UCk20cSRhH_ms_Yk1AZItFqA" target="_blank" >&nbsp;&nbsp;STARSET</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-testimonials" id="review">
+            <div class="row">
+                <h2>Reviews</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Love the game and characters. Good graphics and strategy. Only issues I have is when deploying units you have to be really careful placing their direction and where 
+                        you put them. Many times I’ve accidentally placed a character in a wrong spot or wrong direction with no way to fix it without withdrawing it and having to wait 1
+                         minute to redeploy. And the friends system. It’s impossible to find friends in this game which is weird cause there is a function that requires friends (clues). If 
+                         there could be a confirmation put in place when deploying and a random friend search function this would be 10/10 👍🏻
+                    </blockquote>
+                         <cite>Captnhowdy86</cite>
+                   
+                </div>
+                <div class="col span-1-of-3">    
+                    <blockquote>
+                        If you’re tired of getting curb stomped in other mobile games because you didn’t take out a second mortgage on your house to play competitively, good news! Sure, 
+                        it’s still gatcha so there’s always money to spend if you want, but you can go at your own pace and on your own budget. Don’t want to spend anything? You’ll still be 
+                        able to rock most if not all content thru strategy and roster development.
+                    </blockquote>
+                         <cite>silf1979</cite>
+                   
+                </div>
+                <div class="col span-1-of-3">    
+                    <blockquote>
+                        As a person who normally plays on PC and isn’t very committed to playing mobile games I can say this: This is the only mobile game I have not quit after a few days 
+                        of playing. I enjoy the gameplay, missions, characters, and story. The game is easy to learn and has lots of content for you at the start. But later on the missions 
+                        cost too much sanity (sanity = energy) with a low sanity limit and you don’t regen it fast. But overall the gameplay is solid, with minor flaws in sanity cap/regen. 
+                        Overall I can’t force you to play but I can recommend trying this game with a rating of 10/10.
+                    </blockquote>
+                         <cite>Sazu Yao</cite>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section class="section-plans" id="pack">
+            <div class="row">
+                <h2>Join Our community</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3 class="card">Headhunting Pack</h3>
+                            <p class="plan-price">$25.99<span>/month</span></p>
+                            <p class="plan-price-meal">*Double at first month</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li style="font-size: 17px">&rarr;  Originite Prime x 42</li>
+                                <li style="font-size: 17px">&rarr;10 roll Headhunting </li>
+                                <li style="font-size: 17px">&nbsp;</li>
+                                <li style="font-size: 17px">&nbsp;</li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full js--scroll-to-plan">Download now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3 class="card">Weekly Growth Pack</h3>
+                            <p class="plan-price">$9.99<span>/week</span></p>
+                            <p class="plan-price-meal">*Double at first month</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li style="font-size: 17px">&rarr;LMD x 80000</li>
+                                <li style="font-size: 17px">&rarr;Battle Record x 30</li>
+                                <li style="font-size: 17px">&rarr;Skill Summary-1 x 30</li>
+                                <li style="font-size: 17px">&rarr;Carbon stick x 10</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full js--scroll-to-plan">Download now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3 class="card" >Monthly Card</h3>
+                            <p class="plan-price">$4.99<span>/month</span></p>
+                            <p class="plan-price-meal">*Immediately get Originite Prime x 6</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li style="font-size: 17px">&rarr;Orundum x 200/day</li>
+                                <li style="font-size: 17px">&rarr;Sanity x 60/day</li>
+                                <li style="font-size: 17px">&nbsp;</li>
+                                <li style="font-size:17px">&nbsp;</li>
+
+
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full js--scroll-to-plan">Download now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form id="contact-form" method="POST" action="contact-form-handly.php">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                    <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                    <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+                </form>
+            </div>
+        </section>
     
+        <footer>
+            <div class="box-2">
+                <div> 
+                    <ul class="footer-nav"> 
+                        <li><a href="https://www.youtube.com/watch?v=1XIHcLrYYeE" target="_blank"><img src="resources/img/blackstell.png" alt="Blacksteel" class="icon-footer"></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=XjpS0AeC1sU" target="_blank"><img src="resources/img/ursus.png" alt="Ursus" class="icon-footer"></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=abw8417s-vI&t=5s" target="_blank"><img src="resources/img/Kjerag.png" alt="Kjerag" class="icon-footer"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/ArknightsGlobal" target="_blank"><img src="resources/img/fb.png" alt="Facebook" class="icon-footer"> </a></li>
+                        <li><a href="https://twitter.com/ArknightsEN" target="_blank"><img src="resources/img/twitter.png" alt="Twitter" class="icon-footer"> </a></li>
+                        <li><a href="https://discord.com/invite/arknights" target="_blank"><img src="resources/img/discord.png" alt="discord" class="icon-footer"> </a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <img src="resources/img/footer.png" alt="footer" class="imgfooter">
+                
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
+
     </body>
+
+    
+
+
+
+
 
 </html>
